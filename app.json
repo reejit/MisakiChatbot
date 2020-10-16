@@ -23,16 +23,6 @@
       "value": "452321614",
       "required": false
     },
-    "CF_API_KEY": {
-    "description": "lol",
-    "value": "hi",
-    "required": true
-    },
-    "DATABASE_URL": {
-    "description": "lop",
-    "value": "hi"
-    "required": true
-    },
   },
   "addons": [
     {
