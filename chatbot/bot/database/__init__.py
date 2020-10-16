@@ -7,7 +7,7 @@ from chatbot import DATABASE_URL
 
 def start() -> scoped_session:
     """ returns SQLAlchemy ScopedSession """
-    engine = create_engine(Config.DATABASE_URL)
+    engine = create_engine(DATABASE_URL)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(
