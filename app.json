@@ -1,32 +1,82 @@
 {
-  "name": "pmCatBot",
-  "description": "Livegram clone",
+  "name": "Haruka Aya Clone",
+  "description": "Telegram's Best group manager. Modular Telegram group management bot!",
   "keywords": [
     "telegram",
-    "bot",
-    "php"
+    "best",
+    "group",
+    "manager",
+    "3"
   ],
-  "repository": "https://github.com/reejit/MisakiChatbot",
-  "logo": "https://www.pngmart.com/files/11/Chat-Logo-PNG-Image.png",
+  "repository": "https://github.com/reejit/MisakiChatbot.git",
   "env": {
-    "API_ID": {
-      "description": "Bot token",
-      "required": true
-    },
-    "API_HASH": {
-      "description": "db or json",
-      "value": "db",
-      "required": false
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable env variables",
+      "value": "ANYTHING"
     },
     "TOKEN": {
-      "description": "admin id",
-      "value": "452321614",
-      "required": false
+      "description": "Your bot token, as a string.",
+      "value": ""
     },
+    "CF_API_KEY": {
+      "description": "An integer of consisting of your owner ID",
+      "value": "1116223246"
+    },
+    "API_HASH": {
+      "description": "Your username",
+      "value": "CRAZYHAX"
+    },
+    "API_ID": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
+      "value": "ANYTHING"
+    },
+    "NAME": {
+      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
+      "value": ""
+    },
+    "MESSAGE_DUMP": {
+      "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
+      "value": "-349749825"
+    },
+    "SUDO_USERS": {
+      "description": "A space separated list of user_ids which should be considered sudo users",
+      "value": "686021814"
+    },
+    "SUPPORT_USERS": {
+      "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
+      "value": "686021814"
+    },
+    "WHITELIST_USERS": {
+      "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
+      "value": "686021814"
+    },
+    "PORT": {
+      "description": "Port to use for your webhooks",
+      "value": "5000"
+    },
+    "DEL_CMDS": {
+      "description": "Whether to delete commands from users which don't have rights to use that command",
+      "value": "True"
+    },
+    "STRICT_GBAN": {
+      "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+      "value": "True"
+    },
+    "ALLOW_EXCL": {
+      "description": "Whether to allow using exclamation marks ! for commands as well as /.",
+      "value": "True"
+    },
+    "BAN_STICKER": {
+      "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
+      "value": "CAADBQADfgADttzjKJWTC3CM9l78FgQ"
+    }
   },
   "addons": [
     {
-      "plan": "heroku-postgresql"
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "9.5"
+      }
     }
   ]
 }
