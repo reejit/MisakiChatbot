@@ -2,12 +2,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-from chatbot import config
+from chatbot import DATABASE_URL
 
 
 def start() -> scoped_session:
     """ returns SQLAlchemy ScopedSession """
-    engine = create_engine(Config.DB_URI)
+    engine = create_engine(Config.DATABASE_URL)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(
