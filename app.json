@@ -31,7 +31,7 @@
     "DATABASE_URL": {
     "description": "lop",
     "value": "hi"
-    "required": 
+    "required": true
   },
   "addons": [
     {
