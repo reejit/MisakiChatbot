@@ -1,0 +1,41 @@
+{
+  "name": "pmCatBot",
+  "description": "Livegram clone",
+  "keywords": [
+    "telegram",
+    "bot",
+    "php"
+  ],
+  "repository": "https://github.com/reejit/MisakiChatbot",
+  "logo": "https://www.pngmart.com/files/11/Chat-Logo-PNG-Image.png",
+  "env": {
+    "API_ID": {
+      "description": "Bot token",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "db or json",
+      "value": "db",
+      "required": false
+    },
+    "TOKEN": {
+      "description": "admin id",
+      "value": "452321614",
+      "required": false
+    }
+    "CF_API_KEY": {
+    "description": "lol",
+    "value": "hi",
+    "required": true
+    }
+    "DATABASE_URL": {
+    "description": "lop",
+    "value": "hi"
+    "required": 
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
+}
