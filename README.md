@@ -3,6 +3,9 @@ A fun telegram userbot written in python3 using [Intellivoid](https://github.com
 Originally written by [this person](https://t.me/TheRealPhoenix)! Reworked by t.me/dank_as_fuck (misaki@eagleunion.tk)
 ## Installation
 Open up your terminal and run these commands.
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/reejit/MisakiChatbot.git)
+
+</details>  
 
 • ```git clone https://github.com/Dank-del/MisakiChatbot.git```
 
